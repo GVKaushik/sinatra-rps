@@ -37,9 +37,9 @@ get("/paper") do
   if @comp_move=="rock"
     @outcome = "lost"
   elsif @comp_move=="paper"
-    @outcome = "won"
-  else
     @outcome = "tied"
+  else
+    @outcome = "won"
   end
   erb(:paper)
 end
